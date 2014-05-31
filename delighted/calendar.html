@@ -1,0 +1,71 @@
+<div class="row   grid">
+  <div class="col-md-12" id="div_1">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+         <i class="fa fa-calendar"></i> Calendar
+         <span class="panel-options">
+          <a href="#" class="panel-settings" >
+            <i class="fa fa-cogs"></i>
+          </a>
+          <a href="#" class="panel-refresh">
+            <i class="fa fa-refresh"></i>
+          </a>
+          <a href="#" class="panel-minimize">
+            <i class="fa fa-chevron-up"></i>
+          </a>
+          <a href="#" class="panel-close">
+            <i class="fa fa-times"></i>
+          </a>
+        </span>
+      </h3>
+    </div>
+    <div class="panel-body">
+      <div class="row">
+       <div class="col-md-12">
+        <div class="col-md-3">
+          <div class="input-group">
+           <input type="text" name="createEvent" class="form-control" id="write-event" placeholder="Add Event Here"> 
+           <span class="input-group-btn">
+            <button class="btn bg-primary text-white" id="create-event" type="button">Create!</button>
+          </span>
+        </div>
+        <select class="form-control event-color">
+          <option value="bg-info">SELECT COLOR (default Info)</option>
+          <option value="bg-info">.bg-info</option>
+          <option value="bg-success">.bg-success</option>
+          <option value="bg-danger">.bg-danger</option>
+          <option value="bg-primary">.bg-primary</option>
+        </select>
+        <div id="external-events">
+          <ul class="list-group text-center">
+           <li data-class="bg-success" class="external-event list-group-item bg-success  ui-draggable" data-category="bg-success">Php</li>
+           <li data-class="bg-info" class="external-event list-group-item bg-info  ui-draggable">Jquery</li>
+           <li data-class="bg-success" class="external-event list-group-item bg-success  ui-draggable">SQL</li>
+           <li data-class="bg-danger" class="external-event list-group-item bg-danger  ui-draggable">Photoshop CS5</li>
+           <li data-class="bg-success" class="external-event list-group-item bg-success  ui-draggable">.bg-success</li>
+           <li data-class="bg-warning" class="external-event list-group-item bg-warning  ui-draggable">.bg-warning</li>
+           <li data-class="bg-info" class="external-event list-group-item bg-info  ui-draggable">.bg-info</li>
+           <li data-class="bg-danger" class="external-event list-group-item bg-danger  ui-draggable">.bg-danger</li>
+           <li data-class="bg-success" class="external-event list-group-item bg-success  ui-draggable">CSS3</li>
+           <li data-class="bg-danger" class="external-event list-group-item bg-danger list-group-item ui-draggable">Event Maker</li>
+           <li data-class="bg-info" class="external-event list-group-item bg-info list-group-item ui-draggable">Multiple</li>
+           <li data-class="bg-warning" class="external-event list-group-item bg-warning list-group-item ui-draggable">Lorem</li>
+           <li data-class="bg-info" class="external-event list-group-item bg-success  ui-draggable">HTML5</li>
+           <li data-class="bg-info" class="external-event list-group-item bg-info list-group-item ui-draggable">My Event </li>
+         </ul>
+       </div>
+       <input type="checkbox" id="drop-remove"> <label for="drop-remove">Remove after drop</label>
+     </div>
+     <div class="col-md-9">
+      <div id="calendar"></div>
+    </div>
+  </div>
+</div>
+<!-- /panel body -->
+</div>
+</div>
+<!-- Page Scripts  =============================-->
+<script src="js/fullcalendar.min.js"></script>
+<script src="js/fullcalendar-custom.js"></script>
+</div>

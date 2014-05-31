@@ -1,0 +1,35 @@
+<div class="row extended-zoom">
+	<div class="alert alert-info">Note - If you are using IE 8 or lower than you will see a square lens</div>
+	<div class="col-md-4 demo-image">
+		<h3>Original Image</h3>
+		<img  src="images/extended-1.jpg"  width="536px" height="300px" />
+	</div>
+	<div class="col-md-4 demo-image">
+		<h3>Original Image</h3>
+		<img  src="images/extended-2.jpg"  width="536px" height="300px" />
+	</div>
+	<div class="col-md-4 demo-image">
+		<h3>Original Image</h3>
+		<img  src="images/extended-3.jpg"  width="536px" height="300px" />
+	</div>
+	<div class="col-md-4 demo-image">
+		<h3>Default Lens</h3>
+		<img id="img_01" src="images/extended-1.jpg"  width="536px" height="300px" />
+	</div>
+	<div class="col-md-4 demo-image">
+		<h3>Custom Lens</h3>
+		<img id="img_04" src="images/extended-2.jpg"  width="536px" height="300px" />
+	</div>
+	<div class="col-md-4 demo-image">
+		<h3>High Lens</h3>
+		<img id="img_02" src="images/extended-3.jpg"  width="536px" height="300px" />
+	</div>
+</div>
+<script src="js/jquery.imageLens.js"></script>
+<script>
+	$( document ).ready(function() {
+		$("#img_01").imageLens();
+		$("#img_02").imageLens({ lensSize: 200 });
+		$("#img_03").imageLens({ imageSrc: "sample01.jpg" });
+		$("#img_04").imageLens({ borderSize: 8, borderColor: "#23bab5" });
+	});</script>

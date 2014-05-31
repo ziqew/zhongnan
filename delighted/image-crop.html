@@ -1,0 +1,87 @@
+
+<!--end of row-->
+
+<!-- Basic Image crop behaviour -->
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">
+      Basic image crop behaviour
+      <span class="panel-options">
+        <a href="#" class="panel-settings">
+          <i class="fa fa-cogs"></i>
+        </a>
+        <a href="#" class="panel-refresh">
+          <i class="fa fa-refresh"></i>
+        </a>
+        <a href="#" class="panel-minimize">
+          <i class="fa fa-chevron-up"></i>
+        </a>
+        <a href="#" class="panel-close">
+          <i class="fa fa-times"></i>
+        </a>
+      </span>
+    </h3>
+  </div>
+  <div class="panel-body">
+    <img src="images/croods.jpg" width="100%" id="target" />
+  </div>
+  <div class="panel-footer">
+    <!-- This is the form that our event handler fills -->
+    <form onsubmit="return false;" class="coords">
+      <ul class="list-inline">
+        <li><label>X1 <input type="text" size="4" id="x1" name="x1" /></label></li>
+        <li><label>Y1 <input type="text" size="4" id="y1" name="y1" /></label></li>
+        <li><label>X2 <input type="text" size="4" id="x2" name="x2" /></label></li>
+        <li><label>Y2 <input type="text" size="4" id="y2" name="y2" /></label></li>
+        <li><label>W <input type="text" size="4" id="wid" name="wid" /></label></li>
+        <li><label>H <input type="text" size="4" id="hei" name="hei" /></label></li>  
+      </ul>
+    </form>
+  </div>
+</div>
+</div>
+</div>
+
+
+<!-- Image crop on server side-->
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">
+      Image crop on server side
+      <span class="panel-options">
+        <a href="#" class="panel-settings">
+          <i class="fa fa-cogs"></i>
+        </a>
+        <a href="#" class="panel-refresh">
+          <i class="fa fa-refresh"></i>
+        </a>
+        <a href="#" class="panel-minimize">
+          <i class="fa fa-chevron-up"></i>
+        </a>
+        <a href="#" class="panel-close">
+          <i class="fa fa-times"></i>
+        </a>
+      </span>
+    </h3>
+  </div>
+  <div class="panel-body">
+    <!-- This is the image we're attaching Jcrop to -->
+    <img src="images/croods.jpg"  width="100%" id="cropbox" />
+  </div>
+  <div class="panel-footer">
+    <!-- This is the form that our event handler fills -->
+    <form action="crop.php" method="post" onsubmit="return checkCoords();">
+      <input type="hidden" id="x" name="x" />
+      <input type="hidden" id="y" name="y" />
+      <input type="hidden" id="w" name="w" />
+      <input type="hidden" id="h" name="h" />
+      <input type="submit" value="Crop Image" class="btn btn-large btn-info" />
+      <p>An example server-side crop script. Hidden form values are set when a selection is made. If you press the Crop Image button, the form will be submitted and a 150x150 thumbnail will be dumped to the browser. Try it!</p>
+    </form>
+  </div>
+</div>
+</div>
+</div>
+<script src="js/jcrop/jquery.Jcrop.min.js"></script>
+<script src="js/jcrop/Jcrop.custom.js"></script>
+

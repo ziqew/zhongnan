@@ -1,0 +1,131 @@
+ <div class="row">
+   <div class="col-md-12 " id="div_1">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          Flot charts
+          <span class="panel-options">
+            <a href="#" class="panel-settings" >
+              <i class="fa fa-cogs"></i>
+            </a>
+            <a href="#" class="panel-refresh">
+              <i class="fa fa-refresh"></i>
+            </a>
+            <a href="#" class="panel-minimize">
+              <i class="fa fa-chevron-up"></i>
+            </a>
+            <a href="#" class="panel-close">
+              <i class="fa fa-times"></i>
+            </a>
+          </span>
+        </h3>
+      </div>
+      <div class="panel-body">
+        <div id="flotOne" class="demo-placeholder"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Series Types Graph-->
+<div class="row">
+ <div class="col-md-12 " id="div_2">
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <h3 class="panel-title">
+        Series charts
+        <span class="panel-options">
+          <a href="#" class="panel-settings" >
+            <i class="fa fa-cogs"></i>
+          </a>
+          <a href="#" class="panel-refresh">
+            <i class="fa fa-refresh"></i>
+          </a>
+          <a href="#" class="panel-minimize">
+            <i class="fa fa-chevron-up"></i>
+          </a>
+          <a href="#" class="panel-close">
+            <i class="fa fa-times"></i>
+          </a>
+        </span>
+      </h3>
+    </div>
+    <div class="panel-body">
+      <div id="flotTwo" class="demo-placeholder"></div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!--Toggling Graphs -->
+<div class="row">
+  <div class="col-md-6" id="div_3">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          Toggling charts
+          <span class="panel-options">
+            <a href="#" class="panel-settings" >
+              <i class="fa fa-cogs"></i>
+            </a>
+            <a href="#" class="panel-refresh">
+              <i class="fa fa-refresh"></i>
+            </a>
+            <a href="#" class="panel-minimize">
+              <i class="fa fa-chevron-up"></i>
+            </a>
+            <a href="#" class="panel-close">
+              <i class="fa fa-times"></i>
+            </a>
+          </span>
+        </h3>
+      </div>
+      <div class="panel-body">
+        <div id="flotThree" class="demo-placeholder"></div>
+      </div>
+      <div class="panel-footer text-center">
+        <p id="choices" ></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6" id="div_3">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">
+          Selection charts
+          <span class="panel-options">
+            <a href="#" class="panel-settings" >
+              <i class="fa fa-cogs"></i>
+            </a>
+            <a href="#" class="panel-refresh">
+              <i class="fa fa-refresh"></i>
+            </a>
+            <a href="#" class="panel-minimize">
+              <i class="fa fa-chevron-up"></i>
+            </a>
+            <a href="#" class="panel-close">
+              <i class="fa fa-times"></i>
+            </a>
+          </span>
+        </h3>
+      </div>
+      <div class="panel-body">
+        <div class="demo-container">
+          <div id="placeholder" class="demo-placeholder"></div>
+        </div>
+        <p>Flot supports selections through the selection plugin. You can enable rectangular selection or one-dimensional selection if the user should only be able to select on one axis. Try left-click and drag on the plot above where selection on the x axis is enabled.</p>
+        <p>The plot command returns a plot object you can use to control the selection. Click the buttons below.</p>
+        <p>
+          <a class="btn btn-info" id="clearSelection">Clear selection</a>
+          <a class="btn btn-primary" id="setSelection">Select year 1994</a>
+        </p>
+        <p><label><input id="zoom" type="checkbox">Zoom to selection.</label></p>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="js/flot/jquery.flot.js"></script>
+<script src="js/flot/jquery.flot.resize.js"></script>
+<script src="js/flot/jquery.flot.stack.js"></script>
+<script src="js/flot/jquery.flot.selection.js"></script>
+<script src="js/flot/flot-custom.js"></script>

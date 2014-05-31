@@ -1,0 +1,291 @@
+<div class="row">
+    <div class="col-md-6" id="canvas_bar_parent">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title ">
+                    Bar Chart
+                    <span class="panel-options">
+                        <a href="#" class="panel-settings" >
+                            <i class="fa fa-cogs"></i>
+                        </a>
+                        <a href="#" class="panel-refresh">
+                            <i class="fa fa-refresh"></i>
+                        </a>
+                        <a href="#" class="panel-minimize">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a href="#" class="panel-close">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </span>
+                </h3>
+            </div>
+            <div class="panel-body">
+               <canvas id="canvas_bar" width="600px" height="650"  ></canvas>
+
+           </div>
+           <!-- /panel body -->
+       </div>
+   </div>
+   <div class="col-md-6" id="canvas_bar_parent">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title ">
+                Donuts
+                <span class="panel-options">
+                    <a href="#" class="panel-settings" >
+                        <i class="fa fa-cogs"></i>
+                    </a>
+                    <a href="#" class="panel-refresh">
+                        <i class="fa fa-refresh"></i>
+                    </a>
+                    <a href="#" class="panel-minimize">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a href="#" class="panel-close">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </span>
+            </h3>
+        </div>
+        <div class="panel-body">
+           <canvas id="canvas_donut" width="600px" height="650"  ></canvas>
+
+       </div>
+       <!-- /panel body -->
+   </div>
+</div>
+</div>
+<div class="row">
+    <div class="col-md-6" id="canvas_bar_parent">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title ">
+                    Bar Chart
+                    <span class="panel-options">
+                        <a href="#" class="panel-settings" >
+                            <i class="fa fa-cogs"></i>
+                        </a>
+                        <a href="#" class="panel-refresh">
+                            <i class="fa fa-refresh"></i>
+                        </a>
+                        <a href="#" class="panel-minimize">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a href="#" class="panel-close">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </span>
+                </h3>
+            </div>
+            <div class="panel-body">
+                <canvas id="canvas_pie" width="600px" height="650"  ></canvas>
+            </div>
+            <!-- /panel body -->
+        </div>
+    </div>
+    <div class="col-md-6" id="canvas_bar_parent">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title ">
+                    Donuts
+                    <span class="panel-options">
+                        <a href="#" class="panel-settings" >
+                            <i class="fa fa-cogs"></i>
+                        </a>
+                        <a href="#" class="panel-refresh">
+                            <i class="fa fa-refresh"></i>
+                        </a>
+                        <a href="#" class="panel-minimize">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a href="#" class="panel-close">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </span>
+                </h3>
+            </div>
+            <div class="panel-body">
+               <canvas id="canvas_polar" width="600px" height="650"  ></canvas>
+
+           </div>
+           <!-- /panel body -->
+       </div>
+   </div>
+</div>
+<div class="row">
+    <div class="col-md-6" id="canvas_bar_parent">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title ">
+                    Donuts
+                    <span class="panel-options">
+                        <a href="#" class="panel-settings" >
+                            <i class="fa fa-cogs"></i>
+                        </a>
+                        <a href="#" class="panel-refresh">
+                            <i class="fa fa-refresh"></i>
+                        </a>
+                        <a href="#" class="panel-minimize">
+                            <i class="fa fa-chevron-up"></i>
+                        </a>
+                        <a href="#" class="panel-close">
+                            <i class="fa fa-times"></i>
+                        </a>
+                    </span>
+                </h3>
+            </div>
+            <div class="panel-body">
+               <canvas id="canvas_radar" width="600px" height="650"  ></canvas>
+
+           </div>
+           <!-- /panel body -->
+       </div>
+   </div>
+
+</div>
+<script src="js/Chart.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+//Bar Chart
+var barChartData = {
+    labels : ["January","February","March","April","May","June","July"],
+    datasets : [
+    {
+        fillColor : "rgba(220,220,220,0.5)",
+        strokeColor : "rgba(220,220,220,1)",
+        data : [65,59,90,81,56,55,40]
+    },
+    {
+        fillColor : "rgba(151,187,205,0.5)",
+        strokeColor : "rgba(151,187,205,1)",
+        data : [28,48,40,19,96,27,100]
+    }
+    ]
+
+}
+
+document.getElementById("canvas_bar").width = document.getElementById('canvas_bar_parent').offsetWidth-40;
+document.getElementById("canvas_bar").height = document.getElementById('canvas_bar_parent').offsetHeight-40;
+
+var myLine = new Chart(document.getElementById("canvas_bar").getContext("2d")).Bar(barChartData);
+
+//Donut Chart
+
+var doughnutData = [
+{
+    value: 30,
+    color:"#F7464A"
+},
+{
+    value : 50,
+    color : "#46BFBD"
+},
+{
+    value : 100,
+    color : "#FDB45C"
+},
+{
+    value : 40,
+    color : "#949FB1"
+},
+{
+    value : 120,
+    color : "#4D5360"
+}
+
+];
+
+document.getElementById("canvas_donut").width = document.getElementById('canvas_bar_parent').offsetWidth-40;
+document.getElementById("canvas_donut").height = document.getElementById('canvas_bar_parent').offsetHeight-40;
+
+var myDoughnut = new Chart(document.getElementById("canvas_donut").getContext("2d")).Doughnut(doughnutData);
+
+
+//pie Chart
+var pieData = [
+{
+    value: 30,
+    color:"#F38630"
+},
+{
+    value : 50,
+    color : "#E0E4CC"
+},
+{
+    value : 100,
+    color : "#69D2E7"
+}
+
+];
+
+document.getElementById("canvas_pie").width = document.getElementById('canvas_bar_parent').offsetWidth-40;
+document.getElementById("canvas_pie").height = document.getElementById('canvas_bar_parent').offsetHeight-40;
+
+var myPie = new Chart(document.getElementById("canvas_pie").getContext("2d")).Pie(pieData);
+
+//Polar
+var chartData = [
+{
+    value : Math.random(),
+    color: "#D97041"
+},
+{
+    value : Math.random(),
+    color: "#C7604C"
+},
+{
+    value : Math.random(),
+    color: "#21323D"
+},
+{
+    value : Math.random(),
+    color: "#9D9B7F"
+},
+{
+    value : Math.random(),
+    color: "#7D4F6D"
+},
+{
+    value : Math.random(),
+    color: "#584A5E"
+}
+];
+
+
+document.getElementById("canvas_polar").width = document.getElementById('canvas_bar_parent').offsetWidth-40;
+document.getElementById("canvas_polar").height = document.getElementById('canvas_bar_parent').offsetHeight-40;
+
+var myPolarArea = new Chart(document.getElementById("canvas_polar").getContext("2d")).PolarArea(chartData);    
+
+//radar
+var radarChartData = {
+    labels : ["Eating","Drinking","Sleeping","Designing","Coding","Partying","Running"],
+    datasets : [
+    {
+        fillColor : "rgba(220,220,220,0.5)",
+        strokeColor : "rgba(220,220,220,1)",
+        pointColor : "rgba(220,220,220,1)",
+        pointStrokeColor : "#fff",
+        data : [65,59,90,81,56,55,40]
+    },
+    {
+        fillColor : "rgba(151,187,205,0.5)",
+        strokeColor : "rgba(151,187,205,1)",
+        pointColor : "rgba(151,187,205,1)",
+        pointStrokeColor : "#fff",
+        data : [28,48,40,19,96,27,100]
+    }
+    ]
+
+}
+
+document.getElementById("canvas_radar").width = document.getElementById('canvas_bar_parent').offsetWidth-40;
+document.getElementById("canvas_radar").height = document.getElementById('canvas_bar_parent').offsetHeight-40;
+
+
+var myRadar = new Chart(document.getElementById("canvas_radar").getContext("2d")).Radar(radarChartData,{scaleShowLabels : false, pointLabelFontSize : 10});
+
+});
+
+</script>

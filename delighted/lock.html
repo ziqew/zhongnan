@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Delighted</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <!-- Styles -->
+  <link href="css/lock.css" rel="stylesheet">
+  <link href="css/animate.css" rel="stylesheet">
+
+  <link href="css/font-awesome.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="logo">
+      <h4><a href="#"><img src="images/logoed.png" alt=""></a></h4>
+    </div>
+    <div class="lock-holder">      
+          <div class="form-group pull-left input-username">
+                   <div class="input-group">
+                    <input type="text" class="form-control "  readonly="readonly" value="bootstrapguru">
+                    <span class="input-group-addon"><i class="fa fa-user"></i></span>    
+                    </div>
+          </div>
+          <i class="fa fa-ellipsis-h dot-left"></i>
+          <i class="fa fa-ellipsis-h dot-right"></i>
+          <div class="form-group pull-right input-password">
+                   <div class="input-group">
+                    <input type="password" class="form-control " placeholder="************" >
+                    <span class="input-group-addon"><i class="fa fa-key"></i></span>
+                  </div>
+          </div>    
+    </div>
+    <div class="avatar">
+           <img src="images/profiles/one.png" alt="">
+    </div> 
+    <div class="submit">
+    <button type="button" class="btn btn-success btn-submit"><i class="fa fa-unlock"></i> ENTER</button>   
+    </div>
+</body>
+<script src="js/jquery/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+                <script src="js/bootstrap-progressbar.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+
+          $('.btn-submit').click(function(e){
+            $('.input-username,dot-left').addClass('animated fadeOutRight')
+            $('.input-password,dot-right').addClass('animated fadeOutLeft')
+            $('.btn-submit').addClass('animated fadeOutUp')
+            setTimeout(function () {
+                      $('.avatar').addClass('avatar-top');
+                      //$('.submit').html('<i class="fa fa-spinner fa-spin text-white"></i>');
+                      $('.submit').html('<div class="progress"><div class="progress-bar progress-bar-success" aria-valuetransitiongoal="100"></div></div>');
+                      $('.progress .progress-bar').progressbar(); 
+              },
+          500);
+
+            setTimeout(function () {
+                  window.location.href = 'index.html#redirect'; 
+
+              },
+          1500);
+
+          });
+
+        
+});
+</script>
+
+</html>

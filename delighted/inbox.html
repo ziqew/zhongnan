@@ -1,0 +1,105 @@
+<div class="row inbox bg-white">
+    <!-- Left Side bar -->
+    <div class="col-md-2 mail-left-box ">
+        <a class="btn  btn-compose "><i class="fa fa-"></i> Compose Mail </a> 
+        <div class=" inbox-options">
+            <a class="list-group-item list-inbox"><i class="fa fa-inbox"></i> Inbox <span class="badge ">1,234</span> </a> 
+            <a class="list-group-item"><i class="fa fa-bolt"></i> Unread <span class="badge ">58</span> </a> 
+            <a class="list-group-item"><i class="fa fa-magic"></i> Important <span class="badge ">65</span> </a> 
+            <a class="list-group-item"><i class="fa fa-bookmark-o"></i> Starred <span class="badge ">56</span> </a> 
+            <a class="list-group-item"><i class="fa fa-check-square-o"></i> Sent <span class="badge ">658</span> </a> 
+            <a class="list-group-item active"><i class="fa fa-ban"></i> Spam <span class="badge ">20</span> </a> 
+            <a class="list-group-item"><i class="fa fa-trash-o"></i> Trash <span class="badge ">620</span> </a> 
+            <a class="list-group-item"><i class="fa fa-archive"></i> Archived <span class="badge ">30</span> </a> 
+        </div>        
+        <div class="list-group inbox-labels">
+            <h5 class="text-primary "><strong>Labels</strong></h5>
+            <a class="list-group-item" href="#"><span class="pull-right bg-purple"><i class="fa fa-tag"></i></span>Work</a>
+            <a class="list-group-item" href="#"><span class="pull-right bg-seagreen"><i class="fa fa-tag"></i></span>Shopping</a>
+            <a class="list-group-item" href="#"><span class="pull-right bg-yellow"><i class="fa fa-tag"></i></span>Promotions</a>
+            <a class="list-group-item" href="#"><span class="pull-right bg-black"><i class="fa fa-tag"></i></span>Finance</a>
+            <a class="list-group-item" href="#"><span class="pull-right bg-seagreen"><i class="fa fa-tag"></i></span>Games</a>
+            <a class="list-group-item" href="#"><span class="pull-right bg-purple"><i class="fa fa-tag"></i></span>Family</a>
+        </div>          
+        <div class="input-group">
+            <input type="text" name="createLabel" class="form-control" id="write-label" placeholder="Create Label Here"> 
+            <span class="input-group-btn">
+                <button class="btn bg-primary text-white" type="button" id="create-label">Go!</button>
+            </span>
+        </div><!-- /input-group -->
+    </div><!-- /Mail Left Side bar -->
+
+    <!-- Mail Right Sidebar -->
+    <div class="col-md-10  mail-right-box ">
+        <div class="mail-options-nav hidden-xs ">
+
+            <div class="row">
+                <div class="col-md-4">
+                 <div class="input-group dropdown-optionss">
+                  <input type="text" class="form-control">
+                  <span class="input-group-addon"><i class="fa fa-search"></i></span>
+              </div>
+          </div>
+          <div class="col-md-8">
+            <div class="btn-group mail-options pull-right">
+                <a href="#"<i class="fa fa-archive text-success"></i> </a>
+                <a href="#"<i class="fa fa-ban text-info"></i></a>
+                <a href="#"<i class="fa fa-trash-o text-danger"></i> </a>
+                <a href="#"<i class="fa fa-flag"></i> </a>
+                <a href="#"<i class="fa fa-chevron-left"></i> </a>
+                <a href="#"<i class="fa fa-chevron-right"></i> </a>
+            </div>
+
+            <div class="input-group select-all dropdown-optionss "> 
+                <div class="input-group-btn ">
+                    <button type="button" class="btn option-btn btn-sm dropdown-toggle" data-toggle="dropdown" tabindex="-1">
+                        <span >Options</span>
+                        <span class="sr-only">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Mark as Unread</a></li>
+                        <li><a href="#">Mark as Important</a></li>
+                        <li><a href="#">Add to Tasks</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Delete</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<div class="mails" style="overflow: hidden; outline: none;" tabindex="5000">
+    
+</div>
+
+</div><!-- /Right Side mail bar -->
+<!-- Modal -->
+<div class="modal fade" id="inboxMessage" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <button type="button" class="close text-white" data-dismiss="modal" aria-hidden="true">×</button>
+                <h3 class="modal-title">Subject</h3>
+            </div>
+            <div class="modal-body">
+                <div class="icon-show">
+
+                </div>
+            </div>
+            <div class="modal-footer">
+                <textarea class="form-control" rows="4"></textarea>
+                <br>
+                <button type="button" class="btn bg-primary text-white">Send Reply! </button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+</div>
+
+
+
+<script src="js/inbox.js"></script>
+

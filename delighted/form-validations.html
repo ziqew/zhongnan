@@ -1,0 +1,522 @@
+<div class="row grid">
+    <div class="col-md-6" id="div_1">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">
+                 <i class="fa fa-coffee"></i> Register Validation
+                 <span class="panel-options">
+                    <a href="#" class="panel-settings" >
+                        <i class="fa fa-cogs"></i>
+                    </a>
+                    <a href="#" class="panel-refresh">
+                        <i class="fa fa-refresh"></i>
+                    </a>
+                    <a href="#" class="panel-minimize">
+                        <i class="fa fa-chevron-up"></i>
+                    </a>
+                    <a href="#" class="panel-close">
+                        <i class="fa fa-times"></i>
+                    </a>
+                </span>
+            </h3>
+        </div>
+        <div class="panel-body">
+            <!-- form: -->
+            <section>
+                <form id="defaultForm" method="post" class="form-horizontal">
+                    <div class="alert alert-success" style="display: none;"></div>
+
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Username</label>
+                        <div class="col-lg-8">
+                            <input type="text" class="form-control" name="username" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Email address</label>
+                        <div class="col-lg-8">
+                            <input type="text" class="form-control" name="email" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Password</label>
+                        <div class="col-lg-8">
+                            <input type="password" class="form-control" name="password" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Retype password</label>
+                        <div class="col-lg-8">
+                            <input type="password" class="form-control" name="confirmPassword" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label" id="captchaOperation"></label>
+                        <div class="col-lg-2">
+                            <input type="text" class="form-control" name="captcha" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-lg-9 col-lg-offset-3">
+                            <button type="submit" class="btn btn-primary">Sign up</button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+            <!-- :form -->
+        </div>
+        <!-- /panel body -->
+    </div>
+</div>
+
+
+<div class="col-md-6" id="div_2">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+             <i class="fa fa-coffee"></i> Custom Submit Handler
+             <span class="panel-options">
+                <a href="#" class="panel-settings" >
+                    <i class="fa fa-cogs"></i>
+                </a>
+                <a href="#" class="panel-refresh">
+                    <i class="fa fa-refresh"></i>
+                </a>
+                <a href="#" class="panel-minimize">
+                    <i class="fa fa-chevron-up"></i>
+                </a>
+                <a href="#" class="panel-close">
+                    <i class="fa fa-times"></i>
+                </a>
+            </span>
+        </h3>
+    </div>
+    <div class="panel-body">
+      <form id="customForm" method="post" class="form-horizontal">
+        <div class="alert alert-success" style="display: none;"></div>
+
+        <div class="form-group">
+            <label class="col-lg-3 control-label">Username</label>
+            <div class="col-lg-5">
+                <input type="text" class="form-control" name="username" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-lg-3 control-label">Email address</label>
+            <div class="col-lg-5">
+                <input type="text" class="form-control" name="email" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="col-lg-3 control-label">Password</label>
+            <div class="col-lg-5">
+                <input type="password" class="form-control" name="password" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-lg-9 col-lg-offset-3">
+                <button type="submit" class="btn btn-primary">Sign up</button>
+            </div>
+        </div>
+    </form>
+</div>
+<!-- /panel body -->
+</div>
+</div>
+<div class="col-md-12" id="div_3">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+             <i class="fa fa-filter"></i>More Validations
+             <span class="panel-options">
+                <a href="#" class="panel-settings" >
+                    <i class="fa fa-cogs"></i>
+                </a>
+                <a href="#" class="panel-refresh">
+                    <i class="fa fa-refresh"></i>
+                </a>
+                <a href="#" class="panel-minimize">
+                    <i class="fa fa-chevron-up"></i>
+                </a>
+                <a href="#" class="panel-close">
+                    <i class="fa fa-times"></i>
+                </a>
+            </span>
+        </h3>
+    </div>
+    <div class="panel-body">
+        <form id="elementForm" method="post" action="validators.html" class="form-horizontal">
+            <fieldset>
+                <legend>Not Empty validator</legend>
+
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">Username</label>
+                    <div class="col-lg-5">
+                        <input type="text" class="form-control" name="username" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">Country</label>
+                    <div class="col-lg-5">
+                        <select class="form-control" name="country">
+                            <option value="">-- Select a country --</option>
+                            <option value="fr">France</option>
+                            <option value="de">Germany</option>
+                            <option value="it">Italy</option>
+                            <option value="jp">Japan</option>
+                            <option value="ru">Russia</option>
+                            <option value="gb">United Kingdom</option>
+                            <option value="us">United State</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-lg-9 col-lg-offset-3">
+                        <div class="checkbox">
+                            <input type="checkbox" name="acceptTerms" /> Accept the terms and policies
+                        </div>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Regular expression based validators</legend>
+
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">Email address</label>
+                    <div class="col-lg-5">
+                        <input type="text" class="form-control" name="email" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">Website</label>
+                    <div class="col-lg-5">
+                        <input type="text" class="form-control" name="website" placeholder="http://" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">Phone number</label>
+                    <div class="col-lg-5">
+                        <input type="text" class="form-control" name="phoneNumber" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">Hex color</label>
+                    <div class="col-lg-3">
+                        <input type="text" class="form-control" name="color" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">US zip code</label>
+                    <div class="col-lg-3">
+                        <input type="text" class="form-control" name="zipCode" />
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Identical validator</legend>
+
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">Password</label>
+                    <div class="col-lg-5">
+                        <input type="password" class="form-control" name="password" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">Retype password</label>
+                    <div class="col-lg-5">
+                        <input type="password" class="form-control" name="confirmPassword" />
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Other validators</legend>
+
+                <div class="form-group">
+                    <label class="col-lg-3 control-label">Ages</label>
+                    <div class="col-lg-3">
+                        <input type="text" class="form-control" name="ages" />
+                    </div>
+                </div>
+            </fieldset>
+
+            <div class="form-group">
+                <div class="col-lg-9 col-lg-offset-3">
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <!-- /panel body -->
+</div>
+</div>
+
+<script src="js/bootstrapValidator.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+    // Generate a simple captcha
+    function randomNumber(min, max) {
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    };
+    $('#captchaOperation').html([randomNumber(1, 100), '+', randomNumber(1, 200), '='].join(' '));
+
+    $('#defaultForm').bootstrapValidator({
+        message: 'This value is not valid',
+        submitHandler: function(validator, form) {
+                // validator is the BootstrapValidator instance
+                // form is the jQuery object present the current form
+                form.find('.alert').html('Thanks for signing up. Now you can sign in as ' + validator.getFieldElement('username').val()).show();
+                //form.submit();
+            },
+            fields: {
+                username: {
+                    message: 'The username is not valid',
+                    validators: {
+                        notEmpty: {
+                            message: 'The username is required and can\'t be empty'
+                        },
+                        stringLength: {
+                            min: 6,
+                            max: 30,
+                            message: 'The username must be more than 6 and less than 30 characters long'
+                        },
+                        regexp: {
+                            regexp: /^[a-zA-Z0-9_\.]+$/,
+                            message: 'The username can only consist of alphabetical, number, dot and underscore'
+                        },
+                        different: {
+                            field: 'password',
+                            message: 'The username and password can\'t be the same as each other'
+                        }
+                    }
+                },
+                email: {
+                    validators: {
+                        emailAddress: {
+                            message: 'The input is not a valid email address'
+                        }
+                    }
+                },
+                password: {
+                    validators: {
+                        notEmpty: {
+                            message: 'The password is required and can\'t be empty'
+                        },
+                        identical: {
+                            field: 'confirmPassword',
+                            message: 'The password and its confirm are not the same'
+                        },
+                        different: {
+                            field: 'username',
+                            message: 'The password can\'t be the same as username'
+                        }
+                    }
+                },
+                confirmPassword: {
+                    validators: {
+                        notEmpty: {
+                            message: 'The confirm password is required and can\'t be empty'
+                        },
+                        identical: {
+                            field: 'password',
+                            message: 'The password and its confirm are not the same'
+                        },
+                        different: {
+                            field: 'username',
+                            message: 'The password can\'t be the same as username'
+                        }
+                    }
+                },
+                captcha: {
+                    validators: {
+                        callback: {
+                            message: 'Wrong answer',
+                            callback: function(value, validator) {
+                                var items = $('#captchaOperation').html().split(' '), sum = parseInt(items[0]) + parseInt(items[2]);
+                                return value == sum;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+
+$('#customForm').bootstrapValidator({
+    message: 'This value is not valid',
+    submitHandler: function(validator, form) {
+                // validator is the BootstrapValidator instance
+                // form is the jQuery object present the current form
+                form.find('.alert').html('you can handle this success submit. Now you can sign in as ' + validator.getFieldElement('username').val()).show();
+                //form.submit();
+            },
+            fields: {
+                username: {
+                    message: 'The username is not valid',
+                    validators: {
+                        notEmpty: {
+                            message: 'The username is required and can\'t be empty'
+                        },
+                        stringLength: {
+                            min: 6,
+                            max: 30,
+                            message: 'The username must be more than 6 and less than 30 characters long'
+                        },
+                        regexp: {
+                            regexp: /^[a-zA-Z0-9_\.]+$/,
+                            message: 'The username can only consist of alphabetical, number, dot and underscore'
+                        }
+                    }
+                },
+                email: {
+                    validators: {
+                        notEmpty: {
+                            message: 'The email address is required and can\'t be empty'
+                        },
+                        emailAddress: {
+                            message: 'The input is not a valid email address'
+                        }
+                    }
+                },
+                password: {
+                    validators: {
+                        notEmpty: {
+                            message: 'The password is required and can\'t be empty'
+                        }
+                    }
+                }
+            }
+        });
+
+$('#elementForm').bootstrapValidator({
+    message: 'This value is not valid',
+    fields: {
+        username: {
+            message: 'The username is not valid',
+            validators: {
+                notEmpty: {
+                    message: 'The username is required and can\'t be empty'
+                },
+                stringLength: {
+                    min: 6,
+                    max: 30,
+                    message: 'The username must be more than 6 and less than 30 characters long'
+                },
+                regexp: {
+                    regexp: /^[a-zA-Z0-9_\.]+$/,
+                    message: 'The username can only consist of alphabetical, number, dot and underscore'
+                }
+            }
+        },
+        country: {
+            validators: {
+                notEmpty: {
+                    message: 'The country is required and can\'t be empty'
+                }
+            }
+        },
+        acceptTerms: {
+            validators: {
+                notEmpty: {
+                    message: 'You have to accept the terms and policies'
+                }
+            }
+        },
+        email: {
+            validators: {
+                notEmpty: {
+                    message: 'The email address is required and can\'t be empty'
+                },
+                emailAddress: {
+                    message: 'The input is not a valid email address'
+                }
+            }
+        },
+        website: {
+            validators: {
+                uri: {
+                    message: 'The input is not a valid URL'
+                }
+            }
+        },
+        phoneNumber: {
+            validators: {
+                digits: {
+                    message: 'The value can contain only digits'
+                }
+            }
+        },
+        color: {
+            validators: {
+                hexColor: {
+                    message: 'The input is not a valid hex color'
+                }
+            }
+        },
+        zipCode: {
+            validators: {
+                usZipCode: {
+                    message: 'The input is not a valid US zip code'
+                }
+            }
+        },
+        password: {
+            validators: {
+                notEmpty: {
+                    message: 'The password is required and can\'t be empty'
+                },
+                identical: {
+                    field: 'confirmPassword',
+                    message: 'The password and its confirm are not the same'
+                }
+            }
+        },
+        confirmPassword: {
+            validators: {
+                notEmpty: {
+                    message: 'The confirm password is required and can\'t be empty'
+                },
+                identical: {
+                    field: 'password',
+                    message: 'The password and its confirm are not the same'
+                }
+            }
+        },
+        ages: {
+            validators: {
+                lessThan: {
+                    value: 100,
+                    inclusive: true,
+                    message: 'The ages has to be less than 100'
+                },
+                greaterThan: {
+                    value: 10,
+                    inclusive: false,
+                    message: 'The ages has to be greater than or equals to 10'
+                }
+            }
+        }
+    }
+});
+});
+</script>
+
+</div>
+
