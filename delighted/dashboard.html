@@ -1,0 +1,640 @@
+    <div class="row">
+        <div class="col-md-3">
+            <div class="web-stats fadeInUp info">
+                    <div class="chart" data-percent="73" >73%</div>    
+                <div class="pull-left graph-summary">
+                    <h5  class="timer" id="lollipop" data-to="5634" data-speed="5000">$ 2,69,34 </h5>
+                    <span class="description">Month Sales</span>
+                </div>
+                <li class="icon ion-ios7-cart-outline fa-watermark"></li>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="web-stats fadeInUp danger">
+                <span class=" pull-left   mini-graph danger"><canvas width="54" height="40" style="display: inline-block; width: 54px; height: 40px; vertical-align: top;"></canvas></span>
+                <div class="pull-left graph-summary">
+                    <h5 class="value">$ 6,669 </h5>
+                    <span class="description">Users</span>
+                </div>
+                <i class=" icon ion-ios7-people-outline fa-watermark"></i>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="web-stats fadeInUp inverse">
+                <!-- <span class=" pull-left   mini-graph inverse bg-white"><canvas width="54" height="40" style="display: inline-block; width: 54px; height: 40px; vertical-align: top;"></canvas></span> -->
+
+                <span class="fa-stack fa-lg pull-left">
+                    <i class="fa fa-circle fa-stack-2x"></i>
+                    <i class="fa fa-flag fa-stack-1x fa-inverse"></i>
+                </span>
+                <div class="pull-left graph-summary">
+                    <h5 class="value">600+</h5>
+                    <span class="description">Notifications</span>
+                </div>
+
+                <i class=" icon ion-ios7-bell-outline fa-watermark"></i>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="web-stats fadeInUp success">
+                <span class=" pull-left   mini-graph success"><canvas width="54" height="40" style="display: inline-block; width: 54px; height: 40px; vertical-align: top;"></canvas></span>
+                <div class="pull-left graph-summary">
+                    <h5 class="value">6,996</h5>
+                    <span class="description">Pending</span>
+                </div>
+
+                <i class=" icon ion-ios7-alarm-outline fa-watermark"></i>
+            </div>
+        </div>
+
+    </div>
+    <div class="row">
+     <div class="col-md-8">
+         <div class="panel bg-none">
+                <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-12" id="canvas_parent">
+                    <canvas id="canvas" height="350" width="550"  ></canvas>
+                </div>
+                </div>
+            </div>
+                <!-- /panel body -->
+            </div>
+     
+     </div>
+        
+        <div class="col-md-4" id="div_0">
+            <div class="panel panel-warning">
+                <div class="panel-heading">
+                    <h3 class="panel-title ">
+                        Profile Incomplete
+                        <span class="panel-options">
+                            <a href="#" class="panel-settings" >
+                                <i class="fa fa-cogs"></i>
+                            </a>
+                            <a href="#" class="panel-refresh">
+                                <i class="fa fa-refresh"></i>
+                            </a>
+                            <a href="#" class="panel-minimize">
+                                <i class="fa fa-chevron-up"></i>
+                            </a>
+                            <a href="#" class="panel-close">
+                                <i class="fa fa-times"></i>
+                            </a>
+                        </span>
+                    </h3>
+                </div>
+                <div class="panel-body profile-incomplete">
+                    <img src="images/profiles/fourteen.png" alt="" class="avatar avatar-md avatar-left"> 
+
+                    <div class="welcome-user">
+
+                        <h4><span class="small">welcome back,</span> <a href="#" class="text-primary">Anusha</a></h4>
+                        <h6>Basic membership. <a href="#" class="text-info"> Upgrade?</a><hr></h6>
+                    </div>
+                    <div class="profile-status text-center">
+                        <h4>Setup your profile <span class="small">(66%)</span></h4>
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-primary" aria-valuetransitiongoal="66"></div>
+                        </div>
+                    </div>
+                    <ul class="list-unstyled lists">
+                        <li><i class="fa fa-circle"></i> <a href="#"  class="text-warning">Payment details</a> are invalid</li>
+                        <li><i class="fa fa-circle"></i> Email not verified, click<a href="#"> here </a> to resend</li>
+                    </ul>
+                </div>
+                <!-- /panel body -->
+            </div>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-md-4" id="div_1">
+            <div class="panel panel-primary">
+                <div class="panel-body no-padding">
+                    <div class="calendar-dashboard"></div>
+                    <!-- /panel body -->
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4" id="div_2">
+            <div class="panel panel-primary ">
+                <div class="panel-body no-padding">
+                    <div class="bg-white  mini-weather-widget">
+                        <div class="weather">
+                            <embed class="svg-icon" type="image/svg+xml" src="svgs/cloudDrizzle.svg" /> 
+                            <p>18&deg;</p>  
+                        </div>
+                        <div class="report">
+                            <h4>Rajahmundry</h4>
+                            <i class="fa fa-umbrella"></i>  15&deg;
+                            <span><i class="fa fa-leaf"></i> 2500 Kmph</span>
+                            <span><button type="button" class="btn btn-default btn-refresh"><i class="fa fa-refresh"></i></button></span>
+                        </div>
+                    </div>        <!-- /panel body -->
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-4" id="div_3">
+            <div class="panel mini-chat-panel panel-primary">
+                <div class="panel-body no-padding">
+                    
+                    <div class="chat-menu">
+                        <ul class="list-inline chat-tabs">
+                            <li><a href="#">Chat</a></li>
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Activity</a></li>
+                            <li><a href="#">History</a></li>
+                        </ul>
+                        <div class="chat-box">
+                            <ul class="chat-notifications list-unstyled">
+                                <li class="odd">
+                                    <div class="avatar">
+                                        <img src="images/avatar.png" alt="">
+                                    </div>
+                                    <div class="message">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et, in nobis cum expedita molestiae necessitatibus velit labore iusto nulla sint deserunt blanditiis fugiat soluta architecto sequi numquam non quibusdam quas.
+                                    </div>
+                                    <div class="time">
+                                        23:00 , 2 Days Ago
+                                    </div>
+                                </li>
+                                <li class="even">
+                                    <div class="avatar">
+                                        <img src="images/profiles/eleven.png" alt="">
+                                    </div>
+                                    <div class="message">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, ipsam mollitia voluptatem aliquid alias exercitationem quas dolorum culpa saepe enim illo optio molestiae incidunt nihil soluta vero ab. Recusandae, aperiam.
+                                    </div>
+                                    <div class="time">
+                                        23:00 , 2 Days Ago
+                                    </div>
+
+                                </li>
+                                <li class="odd">
+                                    <div class="avatar">
+                                        <img src="images/avatar.png" alt="">
+                                    </div>
+                                    <div class="message">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem voluptate debitis laudantium excepturi consectetur corrupti tempore vitae! Perspiciatis, molestiae explicabo aperiam delectus nisi placeat minima expedita modi est neque vero.
+                                    </div>
+                                    <div class="time">
+                                        23:00 , 2 Days Ago
+                                    </div>
+
+                                </li>
+                                <li class="even">
+                                    <div class="avatar">
+                                        <img src="images/profiles/eleven.png" alt="">
+                                    </div>
+                                    <div class="message">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem voluptate debitis laudantium excepturi consectetur corrupti tempore vitae! Perspiciatis, molestiae explicabo aperiam delectus nisi placeat minima expedita modi est neque vero.
+                                    </div>
+                                    <div class="time">
+                                        23:00 , 2 Days Ago
+                                    </div>
+
+                                </li>
+                            </ul>
+                            <div id="bottom">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="input-group message-group">
+                        <input type="text" name="createLabel" class="form-control write-message" id="write-message" placeholder="Type here...."> 
+                        <span class="input-group-btn">
+                            <button class="btn btn-primary text-white" type="button" id="send-message">Send</button>
+                        </span>
+                    </div><!-- /input-group -->
+                    <!-- /panel body -->
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <div class="delighted-music-player">
+                    <div class="track-info">
+                        <a href="#"><i class="fa fa-volume-up"></i></a>
+                        <a href="#"><i class="fa fa-music pull-right"></i></a>
+                        <h3>FAST &amp; FURIOUS</h3>
+                        <p class="text-center">WE OWN IT</p>
+                        <div class="track-time">
+                            <p class="start-time">4:08</p>
+                            <p class="end-time pull-right">2:18</p>
+                        </div>
+                    </div>
+                    <div class="seek-bar">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="audio-controls">
+                        <div class="control-buttons">
+                            <ul>
+                                <li><a href="#"><i class="fa fa-backward"></i></a></li>
+                                <li><a href="#"><i class="fa fa-repeat"></i></a></li>
+                                <li><a href="#"><i class="fa fa-play"></i></a></li>
+                                <li><a href="#"><i class="fa fa-stop"></i></a></li>
+                                <li><a href="#"><i class="fa fa-forward"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- end of music player -->
+
+                <div class="multiline-ticker">      
+                    <div class="control">
+                        <i class="icon ion-ios7-arrow-up"></i>
+                        <i class=" icon ion-ios7-arrow-down"></i>
+                    </div>
+                    <div class="scrolling-text">
+                        <ul class="newsticker">
+                            <li>loremEtiam imperdiet volutpat libero eu tristique.</li>
+                            <li>Curabitur porttitor ante eget hendrerit adipiscing.</li>
+                            <li>Praesent ornare nisl lorem, ut condimentum lectus gravida ut.</li>
+                            <li>Nunc ultrices tortor eu massa placerat posuere.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="col-md-4">
+                <div class="new-weather-widget">
+                    <div class="weather-one">
+                        <div class="new-weather-info">
+                            <embed class="svg-icon" type="image/svg+xml" src="svgs/cloudSunFill.svg" />
+                            <p>Sydney</p>
+                            <p>Sunday, May 16</p>
+                            <h1>17&deg;</h1>
+                            <ul>
+                                <li>14 kmph</li>
+                                <li><i class="fa fa-umbrella"></i> 27&deg;</li>
+                                <li><i class="fa fa-tint"></i> 72&deg;</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3 mon">
+                        <div class="display-info">
+                            <div class="info">
+                                <p>Mon</p>
+                                <embed class="svg-icon" type="image/svg+xml" src="svgs/cloudDrizzleSunAltFill.svg" />               
+                                <p>21&deg;</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3 tue">
+                        <div class="display-info">
+                            <div class="info">
+                                <p>Tue</p>
+                                <embed class="svg-icon" type="image/svg+xml" src="svgs/cloudHailAlt.svg" />
+                                <p>6&deg;</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3 wed">
+                        <div class="display-info">
+                            <div class="info">
+                                <p>Wed</p>
+                                <embed class="svg-icon" type="image/svg+xml" src="svgs/sun.svg" />
+                                <p>27&deg;</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-3 thu">
+                        <div class="display-info">
+                            <div class="info">
+                                <p>Thu</p>
+                                <embed class="svg-icon" type="image/svg+xml" src="svgs/cloudLightning.svg" />                   
+                                <p>11&deg;</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div><!--end of new-weather-widget4-->
+
+            </div> 
+            <!-- end of col-md-4 -->
+
+
+            <div class="col-md-4">
+                <div class="bg-white tabbed-widget simple-widget user-info-widget">
+                    <div class="screen">
+                        <img src="images/profiles/max.png" alt="">
+                        <h4>Angelina</h4>
+                        <small>Creative head</small>
+                        <p>Lorem Ipsum are the sample text which has no meaning to know.</p>
+                        <div class="btn-group btn-group-justified statistics">
+                            <a class="btn btn-default" role="button"><span>380</span>Followers</a>
+                            <a class="btn btn-default" role="button"><span>934</span>Likes</a>
+                            <a class="btn btn-default" role="button"><span>48</span>Photos</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="widget-player ">
+                    <h4 class="text-center">Ellie Goulding - Starry Eyed - Bright Lights (2010)</h4>
+                    <div class="panel-body">
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+                                <span class="sr-only">40% Complete (success)</span>
+                            </div>
+                        </div>
+                    </div>          
+                    <div class="pull-left">
+                        <ul class="list-inline list-unstyled">
+                            <li><a href="#"><i class="fa fa-volume-up"></i></a></li>
+                            <li><a href="#"><i class="fa fa-backward"></i></a></li>
+                            <li><a href="#"><i class="fa fa-play"></i></a></li>
+                            <li><a href="#"><i class="fa fa-forward"></i></a></li>
+                        </ul>
+                    </div>  
+                    <a href="#" class="pull-right"><i class="fa fa-star-o"></i></a>         
+                </div><!--end of widget-player -->
+
+            </div>
+            <!-- end of col-md-4 -->
+
+
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <!--Delighted login form-->
+                <div class="delighted-login">
+                    <div class="header">
+                        <h3>LOGIN</h3>
+                        <ul class="pull-right">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                    <div class="form-section">
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                            <input type="text" class="form-control" placeholder="Username">
+                        </div>
+                        <div class="input-group">
+                            <span class="input-group-addon"><i class="fa fa-lock"></i></span>
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                        <button type="button" class="btn btn-success btn-block"><strong>Log in</strong></button>    
+                    </div>
+                    <p>Not a member ? <strong>Signup now</strong></p>
+                </div><!--end of delighted log in forn-->
+            </div>
+
+
+            <div class="col-md-4">
+                <div class="delighted-ticker"><!--Delighted ticker-->
+                    <div id="wrapper">
+                        <ul id="vertical-ticker">
+                            <li>Draggable Portlets</li>
+                            <li>Flat Colors</li>
+                            <li>Responsive</li>
+                            <li>Awesome Widgets</li>
+                            <li>Less Code</li>
+                            <li>Simple To Edit</li>
+                            <li>Enjoy</li>
+                        </ul>
+                        <p><a href="#" id="ticker-previous">Previous</a>  <a href="#" id="ticker-next">Next</a>  <a id="stop" href="#">Stop</a>  <a id="start" href="#">Play</a></p>
+                    </div>
+                </div><!--end of delighted ticker-->
+            </div>
+
+            <div class="col-md-4 mini-timeline-head">
+                <h4><i class="fa fa-rocket"></i> Mini Timeline</h4>
+                <div class="mini-timeline">
+
+                    <ul class="cbp_tmtimeline">
+
+                        <!-- ***** Timeline Event 5 ***** -->
+                        <li>
+                            <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>4/10/13</span> <span>18:30</span></time>
+                            <div class="cbp_tmicon"><i class="fa fa-picture-o"></i></div>
+                            <div class="cbp_tmlabel">
+                                <h2>Rick yoern</h2>
+                                <p>posted an update was watching <i class="fa fa-caret-square-o-right"></i> <a href="#">DIE HARD 2.0</a></p>
+                            </div>
+                        </li>
+                        <!-- ***** Timeline Event 6 ***** -->
+                        <li>
+                            <time class="cbp_tmtime" datetime="2013-04-11T12:04"><span>4/11/13</span> <span>12:04</span></time>
+                            <div class="cbp_tmicon"><i class="fa fa-desktop"></i></div>
+                            <div class="cbp_tmlabel">
+                                <h2>Nelson John</h2>
+                                <p>New updates on cascade has been released please visit us for more details.. <a href="#"><i class="fa fa-info-circle"></i></a></p>
+                            </div>
+                        </li>
+                        <!-- ***** Timeline Event 7 ***** -->                   
+                        <li>
+                            <time class="cbp_tmtime" datetime="2013-04-15 13:15"><span>4/15/13</span> <span>13:15</span></time>
+                            <div class="cbp_tmicon"><i class="fa fa-envelope"></i></div>
+                            <div class="cbp_tmlabel">
+                                <h2>Henry richards</h2>
+                                <p>shared location at <a href="#"> <i class="fa fa-map-marker"></i></a> newyork,kpc</p>
+                            </div>
+                        </li>
+                        <!-- ***** Timeline Event 3 ***** -->
+                        <li>
+                            <time class="cbp_tmtime" datetime="2013-04-17 12:11"><span>4/17/13</span> <span>12:11</span></time>
+                            <div class="cbp_tmicon"><i class="fa fa-gear"></i></div>
+                            <div class="cbp_tmlabel">
+                                <h2>Yanome</h2>
+                                <p>posted pictures</p>                          
+                                <div class="col-md-3 col-sm-3 col-xs-3 post-smimage"><img src="images/profiles/one.png" alt=""></div>
+                                <div class="col-md-3 col-sm-3 col-xs-3 post-smimage"><img src="images/profiles/one.png" alt=""></div>
+                                <div class="col-md-3 col-sm-3 col-xs-3 post-smimage"><img src="images/profiles/one.png" alt=""></div>
+                                <div class="col-md-3 col-sm-3 col-xs-3 post-smimage"><img src="images/profiles/one.png" alt=""></div>   
+                                &nbsp;                                                                                                                          
+                            </div>
+                        </li>
+                        <!-- ***** Timeline Event 4 ***** -->
+                        <li>
+                            <time class="cbp_tmtime" datetime="2013-04-18 09:56"><span>4/18/13</span> <span>09:56</span></time>
+                            <div class="cbp_tmicon"><i class="fa fa-map-marker"></i></div>
+                            <div class="cbp_tmlabel">
+                                <h2>Sprout garlic kohlrabi</h2>
+                                <p>Parsnip lotus root celery yarrow seakale tomato collard greens tigernut epazote ricebean melon tomatillo soybean chicory broccoli beet greens peanut salad. Lotus root burdock bell pepper chickweed shallot groundnut pea sprouts welsh onion wattle seed pea salsify turnip scallion peanut arugula bamboo shoot onion swiss chard. Avocado tomato peanut soko amaranth grape fennel chickweed mung bean soybean endive squash beet greens carrot chicory green bean. Tigernut dandelion sea lettuce garlic daikon courgette celery maize parsley komatsuna black-eyed pea bell pepper aubergine cauliflower zucchini. Quandong pea chickweed tomatillo quandong cauliflower spinach water spinach.</p>
+                            </div>
+                        </li>
+                        <!-- ***** Timeline Event 5 ***** -->
+                        <li>
+                            <time class="cbp_tmtime" datetime="2013-04-10 18:30"><span>4/10/13</span> <span>18:30</span></time>
+                            <div class="cbp_tmicon"><i class="fa fa-picture-o"></i></div>
+                            <div class="cbp_tmlabel">
+                                <h2>Rick yoern</h2>
+                                <p>posted an update was watching <i class="fa fa-caret-square-o-right"></i> <a href="#">DIE HARD 2.0</a></p>
+                            </div>
+                        </li>
+                        <!-- ***** Timeline Event 6 ***** -->
+                        <li>
+                            <time class="cbp_tmtime" datetime="2013-04-11T12:04"><span>4/11/13</span> <span>12:04</span></time>
+                            <div class="cbp_tmicon"><i class="fa fa-desktop"></i></div>
+                            <div class="cbp_tmlabel">
+                                <h2>Nelson John</h2>
+                                <p>New updates on cascade has been released please visit us for more details.. <a href="#"><i class="fa fa-info-circle"></i></a></p>
+                            </div>
+                        </li>
+                        <!-- ***** Timeline Event 7 ***** -->                   
+                        <li>
+                            <time class="cbp_tmtime" datetime="2013-04-15 13:15"><span>4/15/13</span> <span>13:15</span></time>
+                            <div class="cbp_tmicon"><i class="fa fa-envelope"></i></div>
+                            <div class="cbp_tmlabel">
+                                <h2>Henry richards</h2>
+                                <p>shared location at <a href="#"> <i class="fa fa-map-marker"></i></a> newyork,kpc</p>
+                            </div>
+                        </li>
+                        <!-- ***** Timeline Event 4 ***** -->
+                        <li>
+                            <time class="cbp_tmtime" datetime="2013-04-18 09:56"><span>4/18/13</span> <span>09:56</span></time>
+                            <div class="cbp_tmicon"><i class="fa fa-map-marker"></i></div>
+                            <div class="cbp_tmlabel">
+                                <h2>Sprout garlic kohlrabi</h2>
+                                <p>Parsnip lotus root celery yarrow seakale tomato collard greens tigernut epazote ricebean melon tomatillo soybean chicory broccoli beet greens peanut salad. Lotus root burdock bell pepper chickweed shallot groundnut pea sprouts welsh onion wattle seed pea salsify turnip scallion peanut arugula bamboo shoot onion swiss chard. Avocado tomato peanut soko amaranth grape fennel chickweed mung bean soybean endive squash beet greens carrot chicory green bean. Tigernut dandelion sea lettuce garlic daikon courgette celery maize parsley komatsuna black-eyed pea bell pepper aubergine cauliflower zucchini. Quandong pea chickweed tomatillo quandong cauliflower spinach water spinach.</p>
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+
+
+        </div><!-- end of row -->
+    </div>
+    <script src="js/jquery.sparkline.min.js"></script>   
+    <script src="js/sparkline-custom.js"></script>   
+    <script src="js/raphael-min.js"></script>
+    <script src="js/jquery.countTo.js"></script>
+    <script src="js/bic_calendar.js"></script>
+    <script src="js/mini-chat.js"></script>
+    <script src="js/Chart.js"></script>
+    <script type="text/javascript" src="js/jquery.newsTicker.js"></script>
+    <script type="text/javascript" src="js/jquery.totemticker.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+        $('.chart').easyPieChart({
+               animate: 6000,
+               lineWidth : 8,
+               barColor: '#a0d269'
+           });
+
+            $('.timer').each(count);
+
+    //Calendar on right sidebar @bic calendar
+    mesos = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+    dias = [ "MON", "TUE", "WED", "THU", "FRI","SAT","SUN"];
+
+    $('.calendar-dashboard').bic_calendar({
+        nombresMes: mesos,
+        dias: dias,
+        req_ajax: {
+            type: 'get'
+        }
+    });
+
+//news ticker
+$('.newsticker').newsTicker({
+    row_height: 100,
+    max_rows: 1,
+    speed: 300,
+    direction: 'up',
+    duration: 4000,
+    autostart: 1,
+    pauseOnHover: 0,
+    prevButton: $('.ion-ios7-arrow-up'),
+    nextButton: $('.ion-ios7-arrow-down')
+
+});         
+
+//vertical ticker
+$('#vertical-ticker').totemticker({
+    row_height  :   '100px',
+    next        :   '#ticker-next',
+    previous    :   '#ticker-previous',
+    stop        :   '#stop',
+    start       :   '#start',
+    mousestop   :   true,
+});
+
+//mini Timeline
+ $(".mini-timeline").mCustomScrollbar();
+
+    //weather widget random numbers
+    $('.btn-refresh').click(function(){
+        var min = -13;
+        var max = 40;
+        var random = Math.floor(Math.random() * (max - min + 1)) + min;
+        //$('.weather p').html(random+'&deg;');
+
+
+        if(random>20)
+        {
+            var svgIcon="sun";
+        }
+        else if(random>15 && random<21)
+        {
+            var svgIcon="cloudLightning";
+        }
+        else if(random>5 && random<16)
+        {
+            var svgIcon="cloudHailAlt";
+        }
+        else if(random<6)
+        {
+            var svgIcon="cloudLightning";
+        }
+
+        $('.weather').html('<embed class="svg-icon" type="image/svg+xml" src="svgs/'+ svgIcon +'.svg" /><p>'+random+'&deg;</p>');
+
+        
+    });
+
+    var lineChartData = {
+        labels : ["January","February","March","April","May","June","July"],
+        datasets : [
+        {
+            fillColor : "rgba(220,220,220,0.5)",
+            strokeColor : "rgba(220,220,220,1)",
+            pointColor : "rgba(220,220,220,1)",
+            pointStrokeColor : "#fff",
+            data : [65,59,90,81,56,55,40]
+        },
+        {
+            fillColor : "#c1d6be",
+            strokeColor : "#85c179",
+            pointColor : "#5f8755",
+            pointStrokeColor : "#fff",
+            data : [28,48,40,19,96,27,100]
+        }
+        ]
+        
+    }
+
+    
+          setTimeout(function () {
+            document.getElementById("canvas").width = document.getElementById('canvas_parent').offsetWidth;;
+    document.getElementById("canvas").height = document.getElementById('canvas_parent').offsetHeight;
+ 
+                var myLine = new Chart(document.getElementById("canvas").getContext("2d")).Line(lineChartData);
+        },
+      2000);
+
+
+
+});
+    function count(options) 
+    {
+        var $this = $(this);
+        options = $.extend({}, options || {}, $this.data('countToOptions') || {});
+        $this.countTo(options);
+    }
+    
+</script>
